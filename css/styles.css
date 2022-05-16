@@ -4,6 +4,7 @@
   --background-light-gray: #f5f4fa;
   --background-dark-gray: #2f303a;
   --text-black: #000000;
+  --text-white: #ffffff;
   --text-gray: #757575;
   --text-dark-gray: #212121;
   --accent: #2196f3;
@@ -23,13 +24,14 @@ font-weight: 700; button h2 h3
 font-weight: 900; h1 */
 
 /* Оформлення */
-/* Спільні атрибути */
+/* Скидування стилів */
 body {
+  background-color: var(--background-white);
+  color: var(--text-gray);
   font-family: 'Roboto';
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
-  color: var(--text-gray);
 }
 .list {
   list-style: none;
@@ -38,10 +40,59 @@ body {
   text-decoration: none;
   color: inherit;
 }
-/* Окремі атрибути */
+
+/* logo */
 .logo {
   color: var(--accent);
 }
 .logo-black {
   color: var(--text-black);
+}
+.logo-black:hover {
+  color: var(--accent);
+}
+.logo-white {
+  color: var(--text-white);
+}
+.logo-white:hover {
+  color: var(--accent);
+}
+/* site-nav */
+.site-nav .link {
+  color: var(--text-dark-gray);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent);
+}
+
+/* auth-nav */
+.auth-nav .link {
+  color: var(--text-gray);
+}
+.auth-nav .link:hover {
+  color: var(--accent);
+}
+
+/* hero */
+.hero-title {
+  color: var(--text-white);
+}
+.button {
+  color: var(--text-white);
+  background-color: var(--accent);
+  border: none;
+}
+
+/* section */
+.section-title {
+  color: var(--text-dark-gray);
+}
+
+/* addres */
+.addres .link {
+  color: var(--text-dark-gray);
+}
+.addres .link:hover {
+  color: var(--text-white);
 }
