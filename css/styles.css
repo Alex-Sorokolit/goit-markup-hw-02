@@ -9,6 +9,8 @@
   --text-gray: #757575;
   --text-dark-gray: #212121;
   --accent: #2196f3;
+  --font-main: Roboto, sans-serif;
+  --font-decor: Raleway, sans-serif;
 }
 
 /* Fonts Palet*/
@@ -28,15 +30,17 @@ font-weight: 900; h1 */
 body {
   background-color: var(--background-white);
   color: var(--text-gray);
-  font-family: 'Roboto';
+  font-family: var(--font-main);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
+  letter-spacing: 0.03em;
 }
 .list {
   list-style: none;
 }
 .link {
+  font-style: normal;
   text-decoration: none;
   color: inherit;
 }
@@ -47,7 +51,7 @@ body {
   display: none;
 }
 .button {
-  font-family: 'Roboto';
+  font-family: var(--font-main);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -68,7 +72,7 @@ body {
 /* .nav {
 } */
 .header-logo {
-  font-family: 'Raleway';
+  font-family: var(--font-decor);
   font-size: 26px;
   font-weight: 700;
   line-height: 1.2;
@@ -87,6 +91,7 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
+  letter-spacing: 0.02em;
   color: var(--text-dark-gray);
 }
 .nav-item:hover,
@@ -95,8 +100,9 @@ body {
 }
 /* .auth-list {
 } */
-/* .auth-item {
-} */
+.auth-item {
+  letter-spacing: 0.02em;
+}
 .auth-item:hover,
 .auth-item:focus {
   color: var(--accent);
@@ -106,20 +112,20 @@ body {
 /* .hero {
 } */
 .hero-title {
-  font-family: 'Roboto';
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
+  letter-spacing: 0.06em;
 
   text-align: center;
   color: var(--text-white);
   background-color: var(--background-dark-gray);
 }
 .hero-button.button {
-  font-family: 'Roboto';
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
+  letter-spacing: 0.06em;
   color: var(--text-white);
   background-color: var(--accent);
 }
@@ -172,7 +178,7 @@ body {
 /* footer */
 
 .footer-logo {
-  font-family: 'Raleway';
+  font-family: var(--font-decor);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
@@ -186,13 +192,13 @@ body {
 .logo-white:focus {
   color: var(--accent);
 }
-.addres-list {
+.address-list {
   background-color: var(--background-dark-gray);
 }
-/* .addres-link {
+/* .address-link {
 } */
-.addres-link:hover,
-.addres-link:focus {
+.address-link:hover,
+.address-link:focus {
   color: var(--text-white);
 }
 /* -------------------------------------------------------------------------------------------------------------------- */
@@ -206,7 +212,7 @@ body {
 /* .filter-item {
 } */
 .filter-button.button {
-  font-family: 'Roboto';
+  font-family: var(--font-main);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -222,12 +228,13 @@ body {
 /* Portfolio */
 /* .portfolio-list {
 } */
-/* .portfolio-item {
-} */
+.portfolio-item p {
+  font-size: 16px;
+}
 .portfolio-title {
-  font-family: 'Roboto';
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  letter-spacing: 0.06em;
   color: var(--text-dark-gray);
 }
