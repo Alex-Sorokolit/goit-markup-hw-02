@@ -1,5 +1,6 @@
-/* Палітра */
+/* Variables */
 :root {
+  /* Color Palet */
   --background-white: #ffffff;
   --background-light-gray: #f5f4fa;
   --background-dark-gray: #2f303a;
@@ -10,7 +11,7 @@
   --accent: #2196f3;
 }
 
-/* шрифти */
+/* Fonts Palet*/
 /* 
 font-family: 'Raleway';
 font-style: normal;
@@ -23,8 +24,7 @@ font-weight: 500; link h3
 font-weight: 700; button h2 h3
 font-weight: 900; h1 */
 
-/* Оформлення */
-/* Скидування стилів */
+/* Page Index */
 body {
   background-color: var(--background-white);
   color: var(--text-gray);
@@ -40,59 +40,190 @@ body {
   text-decoration: none;
   color: inherit;
 }
-
-/* logo */
-.logo {
+.title {
+  color: var(--text-dark-gray);
+}
+.button {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  color: var(--text-dark-gray);
+  background-color: var(--background-light-gray);
+  border: transparent;
+}
+.button:hover,
+.button:focus {
+  color: var(--text-white);
+  background-color: var(--accent);
+}
+/* header */
+/* .nav {
+} */
+.header-logo {
+  font-family: 'Raleway';
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
   color: var(--accent);
 }
 .logo-black {
   color: var(--text-black);
 }
-.logo-black:hover {
+.header-logo:hover,
+.header-logo:focus {
   color: var(--accent);
+}
+/* .nav-list {
+} */
+.nav-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  color: var(--text-dark-gray);
+}
+.nav-item:hover,
+.nav-item:focus {
+  color: var(--accent);
+}
+/* .auth-list {
+} */
+/* .auth-item {
+} */
+.auth-item:hover,
+.auth-item:focus {
+  color: var(--accent);
+}
+
+/* main */
+/* .hero {
+} */
+.hero-title {
+  font-family: 'Roboto';
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+
+  text-align: center;
+  color: var(--text-white);
+  background-color: var(--background-dark-gray);
+}
+.hero-button.button {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--text-white);
+  background-color: var(--accent);
+}
+.hero-button.button:hover,
+.hero-button.button:focus {
+  color: var(--text-black);
+}
+
+/* specifics */
+
+/* .specifics {
+} */
+.specifics-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+}
+/* .specifics-list {
+} */
+
+/* preview */
+
+/* .preview {
+} */
+.preview-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+}
+/* .preview-list {
+} */
+
+/* team */
+.team {
+  background-color: var(--background-light-gray);
+}
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+}
+/* .team-list {
+} */
+.team-worker {
+  font-weight: 500;
+  font-size: 16px;
+}
+/* footer */
+
+.footer-logo {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--accent);
+  background-color: var(--background-dark-gray);
 }
 .logo-white {
   color: var(--text-white);
 }
-.logo-white:hover {
+.logo-white:hover,
+.logo-white:focus {
   color: var(--accent);
 }
-/* site-nav */
-.site-nav .link {
-  color: var(--text-dark-gray);
+.addres-list {
+  background-color: var(--background-dark-gray);
 }
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: var(--accent);
-}
-
-/* auth-nav */
-.auth-nav .link {
-  color: var(--text-gray);
-}
-.auth-nav .link:hover {
-  color: var(--accent);
-}
-
-/* hero */
-.hero-title {
+/* .addres-link {
+} */
+.addres-link:hover,
+.addres-link:focus {
   color: var(--text-white);
 }
-.button {
+
+/* Page Portfolio */
+/* .portfolio {
+} */
+/* filter */
+.filter-title {
+  display: none;
+}
+/* .filter-list {
+} */
+/* .filter-item {
+} */
+.filter-button.button {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  color: var(--text-dark-gray);
+  background-color: var(--background-light-gray);
+}
+.filter-button.button:hover,
+.filter-button.button:focus {
   color: var(--text-white);
   background-color: var(--accent);
-  border: none;
 }
-
-/* section */
-.section-title {
+/* Portfolio */
+/* .portfolio-list {
+} */
+/* .portfolio-item {
+} */
+.portfolio-title {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
   color: var(--text-dark-gray);
-}
-
-/* addres */
-.addres .link {
-  color: var(--text-dark-gray);
-}
-.addres .link:hover {
-  color: var(--text-white);
 }
